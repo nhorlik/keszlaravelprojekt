@@ -1,0 +1,26 @@
+info:
+  name: CreateVaros
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{a}}/cities"
+  headers:
+    - name: Authorization
+      value: Bearer 2|qIK38ArmDYLElJHctgxh6NaNsDmEn0iHSpDAMUp4f9e92f33
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Dunakeszi",
+          "county_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

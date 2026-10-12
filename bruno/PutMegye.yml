@@ -1,0 +1,25 @@
+info:
+  name: PutMegye
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/api/counties/1
+  headers:
+    - name: Authorization
+      value: Bearer 2|qIK38ArmDYLElJHctgxh6NaNsDmEn0iHSpDAMUp4f9e92f33
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Pest Megye A"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

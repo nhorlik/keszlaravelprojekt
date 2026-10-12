@@ -1,0 +1,19 @@
+info:
+  name: DeleteVaros
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{a}}/cities/2"
+  headers:
+    - name: Authorization
+      value: Bearer 2|qIK38ArmDYLElJHctgxh6NaNsDmEn0iHSpDAMUp4f9e92f33
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
