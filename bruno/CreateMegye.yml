@@ -6,7 +6,15 @@ info:
 http:
   method: POST
   url: "{{a}}/counties"
-  auth: inherit
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Telavivviennaflight"
+      }
+  auth:
+    type: bearer
+    token: "{{b}}"
 
 settings:
   encodeUrl: true

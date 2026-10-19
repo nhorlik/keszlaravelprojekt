@@ -5,11 +5,17 @@ info:
 
 http:
   method: PUT
-  url: "{{a}}/cities/1"
-  headers:
-    - name: Authorization
-      value: Bearer 2|qIK38ArmDYLElJHctgxh6NaNsDmEn0iHSpDAMUp4f9e92f33
-  auth: inherit
+  url: "{{a}}/cities/11"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "szeged",
+        "county_id": 1
+      }
+  auth:
+    type: bearer
+    token: "{{b}}"
 
 settings:
   encodeUrl: true

@@ -5,11 +5,14 @@ info:
 
 http:
   method: DELETE
-  url: "{{a}}/counties/1"
-  headers:
-    - name: Authorization
-      value: Bearer 2|qIK38ArmDYLElJHctgxh6NaNsDmEn0iHSpDAMUp4f9e92f33
-  auth: inherit
+  url: "{{a}}/counties/9"
+  auth:
+    type: bearer
+    token: |-
+      {{b}}
+          "name": "Váciga",
+          "county_id": 1
+      {{b}}
 
 settings:
   encodeUrl: true

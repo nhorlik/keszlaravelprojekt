@@ -1,0 +1,16 @@
+info:
+  name: FilterVaros
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{a}}/counties/4/cities"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

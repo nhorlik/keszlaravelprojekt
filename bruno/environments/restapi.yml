@@ -3,3 +3,9 @@ variables:
   - name: a
     value: http://127.0.0.1:8000/api
     description: ""
+  - name: b
+    value: 3|0ua6u7ll7zyYj10zEltNlsA21N9bpLGgCYx6J31o4d18e63a
+    description: ""
+  - name: c
+    value: 4|fadzUBt4htHOgJZtj42xsPXoETTwB1Wy9uKjYlAUb9584980
+    description: ""

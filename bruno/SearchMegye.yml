@@ -1,0 +1,20 @@
+info:
+  name: SearchMegye
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{a}}/counties/search?query=Pest"
+  params:
+    - name: query
+      value: Pest
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
